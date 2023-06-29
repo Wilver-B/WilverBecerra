@@ -30,77 +30,77 @@
   </head>
 
   <body>
-    <header id="white">
+    <header id="black">
       <div class="container__nav">
-        <a href="/index.html">
-          <img class="logo__black" src="/SVG/LogoHorizontal.svg" alt="Logo" />
+        <a href="../index.html">
+          <img class="logo" src="../SVG/LogoHorizontal.svg  " alt="Logo" />
         </a>
 
-        <nav>
-          <ul class="nav__list__white">
+        <nav class="nav__burguer">
+          <label for="menu">
+            <i class="fa-solid fa-bars" class="nav__img"></i>
+          </label>
+          <input type="checkbox" id="menu" />
+
+          <ul class="nav__menu">
             <li>
-              <a class="nav__link__white" href="sobreMi.html">Sobre mi</a>
+              <a href="sobreMi.html">Sobre mi</a>
             </li>
             <li>
-              <a class="nav__link__white" href="trabajos.html">Trabajos</a>
+              <a href="trabajos.html">Trabajos</a>
             </li>
             <li>
-              <a class="nav__link__white" href="archivo.html">Archivo</a>
+              <a href="archivo.html">Archivo</a>
             </li>
             <li>
-              <a class="nav__link__white" href="contacto.html">Contacto</a>
+              <a href="contacto.html">Contacto</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="contactoIntro">
-      <div class="container introContacto">
+    <section id="archivo">
+      <div class="container intro">
         <h1>Contactame</h1>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-          officia.
-        </p>
+        <p>Me gustaria saber mas sobre tu proyecto, Trabajemos juntos!</p>
       </div>
     </section>
 
-    <section id="formWhite">
-      <div class="container__form">
-        <form action="">
-          <div class="container__input">
-            <input class="input__form" type="text" placeholder="Nombre" />
-          </div>
-          <div class="container__input">
-            <input class="input__form" type="text" placeholder="Telefono" />
-          </div>
-          <div class="container__input">
-            <input class="input__form" type="email" placeholder="Correo" />
-          </div>
-          <div class="container__input">
-            <textarea
-              class="text__area"
-              name="mensaje"
-              id="mensaje"
-              cols="30"
-              rows="10"
-              placeholder="Mensaje"
-            ></textarea>
-          </div>
+    <section>
+      <div class="containerContacto">
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+
+          <input type="submit" value="Enviar" />
         </form>
       </div>
     </section>
 
-    <footer id="footerWhite">
+    <footer id="footerwhite">
       <div class="container__footer">
-        <div class="footer__text">
+        <div>
           <span>@2023 Wilver Becerra</span>
         </div>
-        <div class="footer__sm">
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-behance"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        <div>
+          <a href="https://www.instagram.com/_wjbz/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.behance.net/wjbz"
+            ><i class="fa-brands fa-behance"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/wilver-jesus-becerra-zerpa-b03920182/"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
         </div>
       </div>
     </footer>
